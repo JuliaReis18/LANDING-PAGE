@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TwoWheels Tribe</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilo.css') }}">
+</head>
+<body>
+
+<div id="login">
+    <h2>Login</h2>
+    <form action="{{ url_for('login') }}" method="post">
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" name="senha" required><br><br>
+
+        <input type="submit" value="Entrar">
+    </form>
+
+    <p>Ainda não tem uma conta? <a href="{{ url_for('index') }}">Cadastre-se aqui</a>.</p>
+
+    {% with messages = get_flashed_messages(with_categories=True) %}
+      {% if messages %}
+        <ul>
+          {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</div>
+
+</body>
+</html>

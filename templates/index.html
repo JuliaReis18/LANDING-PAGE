@@ -16,9 +16,17 @@
             <div>
                 <img width="300" src="{{ url_for('static', filename='imagens/Two-wheels tribe (1).png') }}">
             </div>
-            <!--<div>
-                <a href="assinatura.html">ASSINE JÁ</a> 
-            </div>       -->    
+            <!-- <div>
+                <a href="">ALTERAR SENHA</a> 
+            </div>   -->        
+            <div>
+                {% if 'user' in session %}
+                    <p>Bem-vindo, {{ session['user'] }}!</p>
+                    <a href="{{ url_for('logout') }}">Sair</a>
+                {% else %}
+                    <a href="{{ url_for('login') }}">Entrar</a>
+                {% endif %}
+            </div>
         </div>
 
         <div id="principal">   
