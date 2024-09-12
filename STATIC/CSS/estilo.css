@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    background:fixed #DCDCDC url('imagens/deserto.jfif') ;
+    font: 16px Arial, Helvetica, sans-serif;
+}
+
+#assine{
+    background:#262626 ;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+#title1{
+    background: #8B0000;
+    padding: 30px;
+}
+
+#cabecalho{
+    background-color: #FFA07A;
+    width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+    border: 1px solid black;
+    border-top: none;
+}
+
+#principal{
+    width: 1080px;
+    background: #C0C0C0;
+    margin: 0 auto;
+    padding: 30px; 
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    
+}
+
+.corpo{
+    border: 3px solid black;
+    background:#F5F5F5 ;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+
+.esq{
+    float: left;
+    width: 420px;
+    height: 420px;
+}
+
+.left{
+    float: left;
+    width: 360px;
+    height: 120px;
+}
+
+.center_banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+
+/* LINKS CABEÇALHO */
+a:link, a:visited{
+    background: #FFF;
+    color:#000080;
+    text-decoration: none;
+    border:   4px inset black;
+    padding: 5px;
+}
+
+a:hover{
+    color: #000080;
+    background:#DAA520 ;
+    padding: 5px;
+}
+/*-----------------------*/
+
+.clear{
+    clear: both;
+}
+
+.space{
+    padding-top: 15px;
+}
+
+.video{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display:block;
+    margin: 0 auto;
+
+}
+
+#container{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    left: 140px;    
+}
+
+.absolute2{
+    position: absolute;
+    left: 220px;    
+}
+
+
+.title2{
+    text-align: center;
+    background:#5F9EA0 ;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.up{
+    margin-top: 15px;
+}
+
+
+
