@@ -30,7 +30,7 @@ def signup():
     # Verificar se o email já foi cadastrado
     for usuario in dados['usuarios']:
         if usuario['email'] == email:
-            return "Usuário já cadastrado! Tente outro email."
+            return "Usuário já cadastrado! Faça login!"
 
     # Adicionar o novo usuário ao banco de dados
     novo_usuario = {
