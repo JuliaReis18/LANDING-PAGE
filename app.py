@@ -16,7 +16,7 @@ def salvar_dados(dados):
 # Rota para a página inicial
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')  #--------------------------------------------
 
 # Rota para o formulário de assinatura
 @app.route('/signup', methods=['POST'])
