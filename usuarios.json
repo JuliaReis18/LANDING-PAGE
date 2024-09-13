@@ -5,12 +5,16 @@
             "senha": "1234"
         },
         {
-            "email": "joao2",
-            "senha": "1234"
+            "email": "",
+            "senha": ""
         },
         {
             "email": "jp.rgs.2015@gmail.com",
             "senha": "1234"
+        },
+        {
+            "email": "julia.massuda@gmail.com",
+            "senha": "123456"
         }
     ]
 }

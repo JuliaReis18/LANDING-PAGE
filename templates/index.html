@@ -16,17 +16,19 @@
             <div>
                 <img width="300" src="{{ url_for('static', filename='imagens/Two-wheels tribe (1).png') }}">
             </div>
-            <!-- <div>
-                <a href="">ALTERAR SENHA</a> 
-            </div>   -->        
-            <div>
+            
+            <div>  <!-- DIV login e logout e trocar senha-->
                 {% if 'user' in session %}
-                    <p>Bem-vindo, {{ session['user'] }}!</p>
+                    <p class="wc">Bem-vindo, {{ session['user'] }}!</p>
+                    <a href="{{ url_for('trocar_senha') }}">Trocar Senha</a>
+                    <a href="{{ url_for('excluir_usuario') }}">Excluir Conta</a>
                     <a href="{{ url_for('logout') }}">Sair</a>
                 {% else %}
                     <a href="{{ url_for('login') }}">Entrar</a>
                 {% endif %}
             </div>
+                
+        
         </div>
 
         <div id="principal">   
@@ -80,7 +82,7 @@
                     </div>
                     <div id="container" >
                         <ul class="absolute" type="disc">
-                            <li>Bar taltaltal</li>
+                            <li>Bar Running 37</li>
                         </ul>
                     </div>
                 </div>
@@ -91,14 +93,29 @@
                     </div>
                     <div id="container" >
                         <ul class="absolute2" type="disc">
-                            <li>Bar xixixixixix</li>
+                            <li>Bar Bike Shed</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="clear"></div>
+
             </div>         <!-------- CORPO 4 FIM--------->
+
+
+            <div class="corpo"> <!-- CORPO 5 -->
+                <div>
+                    <img class="planos" src="{{url_for('static' , filename='imagens/planos.jpg')}}">
+                </div>
+                <div>
+                    <h2 style="text-align: center;"> Para assinar, entre em contato com um de nossos atendentes</h2>
+                </div>
+                <div style="margin-top: 15px;">
+                    <h2 style="text-align: center;"> (61) 98888-5555 </h2>
+                </div>
+            </div>              <!-- CORPO 5 FIM -->
                 
+
         </div>    <!------ FIM PRINCIPAL -------->
 
         <div id="assine">

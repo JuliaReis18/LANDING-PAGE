@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Senha - TwoWheels Tribe</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilo.css') }}">
+</head>
+<body>
+
+<div id="trocar_senha">
+    <h2>Trocar Senha</h2>
+    
+    <form action="{{ url_for('trocar_senha') }}" method="post">
+        <label for="nova_senha">Nova Senha:</label><br>
+        <input type="password" name="nova_senha" required><br><br>
+
+        <input type="submit" value="Trocar Senha">
+    </form>
+
+    {% with messages = get_flashed_messages(with_categories=True) %}
+      {% if messages %}
+        <ul>
+          {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</div>
+
+</body>
+</html>
