@@ -10,11 +10,15 @@
         },
         {
             "email": "jp.rgs.2015@gmail.com",
-            "senha": "1234"
+            "senha": "2345"
         },
         {
             "email": "julia.massuda@gmail.com",
             "senha": "123456"
+        },
+        {
+            "email": "julinhamotos123@gmail.com",
+            "senha": "12345"
         }
     ]
 }
