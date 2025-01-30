@@ -16,8 +16,8 @@
 ## 🛠️ Tecnologias Utilizadas
 
 - **Python** 🐍  
-- **Flask** 🌐 (caso use um framework web)  
-- **HTML, CSS** 🎨 (para a interface da landing page)  
+- **Flask** 🌐  
+- **HTML, CSS** 🎨  
 - **Banco de Dados** 🗄️ (json)  
 
 ---
